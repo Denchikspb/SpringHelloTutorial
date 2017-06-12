@@ -5,6 +5,6 @@
 
 
     <bean id="printMessage" class="springhellotutorial.springioc.Message"
-          scope="singleton">
+          scope="prototype">
     </bean>
 </beans>
