@@ -1,4 +1,4 @@
-package springhellotutorial;
+package springhellotutorial.helloworld;
 
 /**
  * Created by Денис on 05.06.2017.

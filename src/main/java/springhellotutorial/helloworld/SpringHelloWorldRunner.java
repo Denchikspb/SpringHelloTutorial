@@ -1,7 +1,8 @@
-package springhellotutorial;
+package springhellotutorial.helloworld;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import springhellotutorial.helloworld.SpringHelloWorld;
 
 /**
  * Created by Денис on 05.06.2017.
