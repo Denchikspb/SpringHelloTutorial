@@ -1,6 +1,8 @@
 package springhellotutorial.springioc;
 
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.AbstractApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.context.support.FileSystemXmlApplicationContext;
 
 /**
@@ -8,12 +10,10 @@ import org.springframework.context.support.FileSystemXmlApplicationContext;
  */
 public class MessageRunner {
     public static void main(String[] args) {
-        ApplicationContext context = new FileSystemXmlApplicationContext("classpath:message-beans.xml");
+        AbstractApplicationContext context = new ClassPathXmlApplicationContext("classpath:message-beans.xml");
         Message message = (Message) context.getBean("printMessage");
-        message.setMessage("This is first object");
         System.out.println(message.getMessage());
 
-        Message oneMoreMessage = (Message) context.getBean("printMessage");
-        System.out.println(oneMoreMessage.getMessage());
+        context.registerShutdownHook();
     }
 }

@@ -4,7 +4,9 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
-    <bean id="printMessage" class="springhellotutorial.springioc.Message"
-          scope="prototype">
+    <bean id="printMessage"
+          class="springhellotutorial.springioc.Message"
+          init-method="beanInit" destroy-method="beanDestroy">
+        <property name="message" value="This is simple text message"/>
     </bean>
 </beans>

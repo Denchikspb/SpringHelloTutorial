@@ -13,4 +13,12 @@ public class Message {
     public void setMessage(String message) {
         this.message = message;
     }
+
+    public void beanInit(){
+        System.out.println("Init bean");
+    }
+
+    public void beanDestroy(){
+        System.out.println("Destroy bean");
+    }
 }
