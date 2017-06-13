@@ -1,9 +1,8 @@
 package springhellotutorial.springioc;
 
-import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import org.springframework.context.support.FileSystemXmlApplicationContext;
+import springhellotutorial.Message;
 
 /**
  * Created by Денис on 12.06.2017.

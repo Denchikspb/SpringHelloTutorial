@@ -3,10 +3,10 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-
-    <bean id="printMessage"
-          class="springhellotutorial.Message"
+    <bean id="message" class="springhellotutorial.Message"
           init-method="beanInit" destroy-method="beanDestroy">
-        <property name="message" value="This is simple text message"/>
+        <property name="message" value="This is simple message"/>
     </bean>
+
+    <bean class="springhellotutorial.beanpostprocessor.BeanPostProcessorImpl"/>
 </beans>

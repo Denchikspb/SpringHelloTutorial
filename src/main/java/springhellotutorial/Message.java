@@ -1,4 +1,4 @@
-package springhellotutorial.springioc;
+package springhellotutorial;
 
 /**
  * Created by Денис on 12.06.2017.
