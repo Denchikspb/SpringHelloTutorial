@@ -3,4 +3,40 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+    <bean id="collectionInjection" class="springhellotutorial.collectioninjection.CollectionInjection">
+
+        <property name="documentList">
+            <list>
+                <value>1</value>
+                <value>2</value>
+                <value>3</value>
+                <value>4</value>
+            </list>
+        </property>
+        <property name="documentSet">
+            <set>
+                <value>1</value>
+                <value>2</value>
+                <value>3</value>
+                <value>4</value>
+            </set>
+        </property>
+        <property name="documentMap">
+            <map>
+                <entry key="1" value="s"/>
+                <entry key="2" value="a"/>
+                <entry key="3" value="f"/>
+                <entry key="4" value="g"/>
+            </map>
+        </property>
+
+        <property name="documentProp">
+            <props>
+                <prop key="1">asdas</prop>
+                <prop key="2">hrth</prop>
+                <prop key="3">leprlg</prop>
+                <prop key="4">fplerpf</prop>
+            </props>
+        </property>
+    </bean>
 </beans>
