@@ -21,4 +21,17 @@
 
     <bean id="answerChecker" class="springhellotutorial.annotations.autowired.AnswerChecker"/>
 
+    <bean id="position" class="springhellotutorial.annotations.qualifier.Position"/>
+
+    <bean id="doNetDeveloper" class="springhellotutorial.annotations.qualifier.Developer">
+        <constructor-arg name="name" value="Maks"/>
+        <constructor-arg name="experience" value="1"/>
+        <constructor-arg name="specialty" value=".Net Developer"/>
+    </bean>
+    <bean id="javaDeveloper" class="springhellotutorial.annotations.qualifier.Developer">
+        <constructor-arg name="name" value="Denis"/>
+        <constructor-arg name="experience" value="2"/>
+        <constructor-arg name="specialty" value="Java Developer"/>
+    </bean>
+
 </beans>
