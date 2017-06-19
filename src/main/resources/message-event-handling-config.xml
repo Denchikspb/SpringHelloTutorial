@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="message" class="springhellotutorial.Message">
+        <property name="message" value="This is simple message in propery Message"/>
+    </bean>
+
+    <bean id="myStartEventHandler" class="springhellotutorial.eventhandling.MyStartEventHandler"/>
+    <bean id="myStopEventHandler" class="springhellotutorial.eventhandling.MyStopEventHandler"/>
+
+</beans>

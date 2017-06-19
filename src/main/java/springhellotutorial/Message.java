@@ -21,4 +21,9 @@ public class Message {
     public void beanDestroy(){
         System.out.println("Destroy bean");
     }
+
+    @Override
+    public String toString() {
+        return "This is message: " + message;
+    }
 }
